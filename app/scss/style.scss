@@ -69,13 +69,13 @@
   text-transform: capitalize;
   text-align: center;
   &-title{
-    font-weight: 700;
+    @include f700;
     margin-bottom: 28px;
     font-size: 48px;
     line-height: 30px;
   }
   &-text{
-    font-weight: 500;
+    @include f500;
     margin-bottom: 50px;
     font-size: 20px;
     line-height: 30px;
@@ -92,12 +92,12 @@
       box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
       border: none;
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
       &::placeholder{
         padding-left: 25px;
         padding-right: 60px;
         color: #90a4ae;
-        font-weight: 500;
+        @include f500;
       }
     }
     button{
@@ -163,7 +163,7 @@
     justify-content: space-between;
     padding: 0 30px;
     align-items: center;
-    font-weight: 500;
+    @include f500;
     border-bottom: 1px solid #e7ecf2;
   }
   &-name{
@@ -206,7 +206,7 @@
     }
     span{
       font-size: 14;
-      font-weight: 500;
+      @include f500;
     }
   }
   &-star{
@@ -265,7 +265,64 @@
 
 
 // end product slider
+// start benefit
 
+.benefit{
+  background-color: $bg;
+  padding: 125px 0;
+}
+
+.benefit__title{
+  color: #fff;
+}
+
+.benefit__inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefit__item{
+  max-width: 370px;
+  text-align: center;
+  padding: 0 15px;
+  &:hover{
+    .benefit__item-images{
+      background-color: $green;
+      path{
+        fill:#fff;
+      }
+    }
+    .benefit__item-title{
+      color: $green;
+    }
+
+  }
+  &-images{
+    width: 114px;
+    height: 114px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    transition: all .5s;
+    
+  }
+  &-title{
+    font-size: 24px;
+    @include f500;
+    color: #fff;
+    margin-bottom: 25px;
+    transition: all .3s;
+
+  }
+  &-text{
+    color: #b0bec5;
+  }
+}
+// end benefit
 
 
 
