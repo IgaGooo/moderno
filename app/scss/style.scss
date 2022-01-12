@@ -369,10 +369,37 @@
   }
 }
 
-
-
-
 //end authors
 
+// start free
 
+.free{
+  padding: 60px 0 120px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    max-width: 370px;
+    width: 100%;
+  }
+}
 
+.free__item{
+  &-img{
+    min-height: 270px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  &-title{
+    background-color: #f8f8f8;
+    @include f700;
+    font-size: 24px;
+    color: $bg;
+    text-align: center;
+    padding: 30px 10px;
+  }
+}
+
+// end  free
