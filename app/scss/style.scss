@@ -298,8 +298,9 @@
 
   }
   &-images{
-    width: 114px;
-    height: 114px;
+    max-width: 114px;
+    width: 100%;
+    min-height: 114px;
     background-color: #fff;
     border-radius: 50%;
     display: flex;
@@ -323,6 +324,54 @@
   }
 }
 // end benefit
+
+// start authors
+
+.authors{
+  min-height: 750px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__inner{
+    height: 220px;
+    width: 650px;
+    background-color: $green;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    &-title{
+      font-size: 30px;
+      line-height: 36px;
+      max-width: 265px;
+      color: #fff;
+      @include f500;
+      margin-right: 45px;
+      span{
+        @include f700;
+      }
+    }
+    &-btn{
+      button{
+        border: none;
+        padding: 25px 45px;
+        font-size: 18px;
+        @include f500;
+        color: $bg;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+
+
+//end authors
 
 
 
