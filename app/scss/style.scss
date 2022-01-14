@@ -403,3 +403,137 @@
 }
 
 // end  free
+
+// start footer
+
+.footer{
+  background-color: $bg;
+  min-height: 565px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    position: relative;
+    padding: 115px 0 95px;
+    &-title{
+      margin-bottom: 65px;
+      font-size: 22px;
+      @include f500;
+      color: #fff;
+      position: relative;
+    }
+    &-title::before{
+      content: "";
+      position: absolute;
+      border-bottom: 3px solid $green;
+      max-width: 50px;
+      width: 100%;
+      top: 48px;
+    }
+    &-text{
+      color: $footer-txt;
+      max-width: 270px;
+      width: 100%;
+    }
+    &-adress{
+      margin-left: 30px;
+      padding: 29px 0 16px;
+      font-size: 14px;
+      color: #fff;
+      max-width: 240px;
+      width: 100%;
+      position: relative;
+    }
+    &-adress::before{
+      content: '';
+      position: absolute;
+      background-image: url(../images/icons/adress.png);
+      width: 10px;
+      height: 17px;
+      left: -30px;
+      bottom: 45px;
+    }
+    &-tel{
+      a{
+        font-size: 14px;
+        color: #fff;
+      }
+      margin-left: 30px;
+      position: relative;
+    }
+    &-tel::before{
+      content: '';
+      position: absolute;
+      background-image: url(../images/icons/phone.png);
+      width: 15px;
+      height: 16px;
+      left: -30px;
+      bottom: 4px;
+    }
+    
+    ul{
+      padding: 0;
+      margin-left: 20px;
+      font-size: 15px;
+      line-height: 36px;
+      color: $footer-txt;
+      li{
+        position: relative;
+      }
+      li::before{
+        content: '';
+        position: absolute;
+        background-image: url(../images/icons/right.png);
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 10px;
+        left: -15px;
+        top: 12px;
+      }
+    }
+    &-social{
+      a{
+        margin-right: 3px;
+      }
+    }
+    &-title-search{
+      font-size: 20px;
+      color: #fff;
+      padding: 25px 0 10px;
+    }
+    button{
+      content: '';
+      position: absolute;
+      right: 0;
+      background-color: $green;
+      width: 45px;
+      min-height: 39px;
+      border: none;
+      cursor: pointer;
+    }
+    input{
+      color: #fff;
+      background-color: rgb(47, 60, 67);
+      border: none;
+      border: 1px solid #000;
+      border-bottom: 1px solid #253136;
+      max-width: 260px;
+      width: 100%;
+      min-height: 40px;
+      font-size: 14px;
+      padding-left:13px;
+      padding-right: 50px;
+      &::placeholder{
+        color: #697378;
+      }
+    }
+  }
+  &__property-info{
+    text-align: center;
+  }
+}
+
+// end footer
+
+
